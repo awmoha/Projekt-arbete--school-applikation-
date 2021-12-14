@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="">
+    <div class="quiz_mode">
+      <div>
+        <span>Light Mode</span>
+        <div>
+          <input type="checkbox" class="checkbox" id="mode" />
+          <label class="label" for="mode">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+            <div class="circle"></div>
+          </label>
+        </div>
+        <span>Dark Mode</span>
+      </div>
+    </div>
+  </body>
+    <article class="header">
+    <h1>School applications</h1>
+    <div id="input"></div> 
+    <div id="info"></div>
+  </article>
+<aside class="header2">
+  <legend for="type">Filter by education.</legend> 
+</aside>
+  <article class="main">
+    <select id="utbildning">
+      <option hidden>All students </option>
+      <option>Frontend</option>
+      <option>Backend</option>
+      <option>.NET</option>
+    </select>
+    <button id="filter">Filtera</button>
+  </article>
+  <article class="header3">
+    <button id="filterByAge">Filter By age</button>
+    <button id="filterByFirstName">Filter By First Name</button>
+    <button id="filterByLastName">Filter By Last Name</button>
+  </article>
+  <h3>click on name to see all schools</h3>
+    <div id="ListOfUtbild"></div>
+    <div id="fallande"></div>
+    <div id="fallandeName"></div>
+    <div id="fallandeLastName"></div>
+    <div id="listOfAll"></div>
+    <div id="listOffilter"></div>
+    <div id="list"></div> 
+    
+    <script src="main.js"></script>
+  </body>
+</html>
